@@ -1,6 +1,8 @@
 package view;
 
 import domain.Movie;
+import domain.ReserveStatusList;
+import domain.TotalPrice;
 
 import java.util.List;
 
@@ -10,4 +12,14 @@ public class OutputView {
             System.out.println(movie);
         }
     }
+
+    public static void printResult(ReserveStatusList reserveStatusList) {
+        System.out.println("예약 내역");
+        reserveStatusList.printResult();
+    }
+
+    public static void printTotalPrice(TotalPrice totalPrice) {
+        System.out.println(totalPrice.toString());
+    }
+
 }
